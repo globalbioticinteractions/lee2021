@@ -153,5 +153,68 @@
         "datatype" : "string"
       } ]
     }
+  }, {
+    "@context" : [ "http://www.w3.org/ns/csvw", {
+      "@language" : "en"
+    } ],
+    "rdfs:comment" : [ "inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/" ],
+    "url" : "Phoresy_Records_Appendix_Interactions.tsv",
+    "dcterms:bibliographicCitation" : "Lee, Leshon; Tan, David J. X.; Oboňa, Jozef; Gustafsson, Daniel R.; Ang, Yuchen; Meier, Rudolf (2021). Phoresy Records Appendix.xlsx. figshare. Dataset. https://doi.org/10.6084/m9.figshare.12671711.v1",
+    "delimiter" : "\t",
+    "headerRowCount" : 1,
+    "null" : [ "", "Nil", "?" ],
+    "interactionTypeName": "ectoParasiteOf",
+    "interactionTypeId": "http://purl.obolibrary.org/obo/RO_0002632",
+    "tableSchema" : {
+      "foreignKeys": [
+          {
+            "columnReference": "referenceId",
+            "reference": {
+              "columnReference": "referenceId"
+            }
+          }
+        ],
+      "columns" : [ {
+        "name" : "sourceTaxonName",
+        "titles" : "Louse",
+        "datatype" : "string"
+      }, {
+        "name" : "Hippoboscid",
+        "titles" : "Hippoboscid",
+        "datatype" : "string"
+      }, {
+        "name" : "Bird host common name",
+        "titles" : "Bird host common name",
+        "datatype" : "string"
+      }, {
+        "name" : "targetTaxonName",
+        "titles" : "Bird host scientific name",
+        "datatype" : "string"
+      }, {
+        "name" : "Bird host",
+        "titles" : "Bird host",
+        "datatype" : "string"
+      }, {
+        "name" : "localityName",
+        "titles" : "Locality",
+        "datatype" : "string"
+      }, {
+        "name" : "Specific locality (State/Town)",
+        "titles" : "Specific locality (State/Town)",
+        "datatype" : "string"
+      }, {
+        "name" : "Reference",
+        "titles" : "Reference",
+        "datatype" : "string"
+      }, {
+        "name" : "Secondary Reference",
+        "titles" : "Secondary Reference",
+        "datatype" : "string"
+      }, {
+        "name" : "referenceId",
+        "titles" : "ReferenceId",
+        "datatype" : "string"
+      } ]
+    }
   } ]
 }
